@@ -40,6 +40,24 @@ No estado atual, a fronteira inicial inclui:
 - T-009
 - T-011
 
+## Model and effort proposal
+
+Projeto é desenvolvido com Claude e Codex, com orçamento de token limitado entre os dois. Economizar token é requisito, não otimização opcional.
+
+Antes de começar a executar um ticket (issue `ready-for-agent`), o agente deve propor explicitamente, num comentário na issue:
+
+- modelo recomendado (ex. Haiku/mini vs Sonnet/standard vs Opus/alto, conforme nomenclatura da ferramenta usada);
+- nível de esforço/reasoning recomendado (baixo/médio/alto);
+- justificativa curta: por que esse nível basta pro escopo do ticket.
+
+Critério de dimensionamento:
+
+- ticket mecânico, bem delimitado, sem ambiguidade de design (ex. CRUD simples, scaffold, formulário, configuração de infra já decidida) → modelo/esforço mais barato disponível;
+- ticket com lógica de domínio não trivial, múltiplos módulos, ou risco de segurança/conclusão (ex. T-007, T-008, T-012) → modelo/esforço mais alto;
+- não escalar modelo/esforço "por precaução" quando o ticket não exige; não economizar em ticket que mexe em segurança, segredo ou máquina de conclusão.
+
+Se o ticket já tiver blockers resolvidos mas a issue ainda não tiver essa proposta registrada, o próximo agente a pegar o ticket deve postá-la antes de começar a implementar.
+
 ## Before implementation
 
 Para cada ticket:
