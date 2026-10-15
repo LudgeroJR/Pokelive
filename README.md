@@ -9,6 +9,7 @@ dos seus projetos de captura.
 2. [`status.md`](./status.md) — fase atual, decisões recentes, próximos passos.
 3. [`tickets.md`](./tickets.md) — tickets e critérios de aceite.
 4. [`agent.md`](./agent.md) — instruções pro coding agent.
+5. [`AGENTS.md`](./AGENTS.md) — issue tracker, triage labels, domain docs (compartilhado entre Claude e Codex).
 
 ## Estrutura
 
