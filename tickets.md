@@ -2,26 +2,29 @@
 
 ## Visão geral
 
-| ID | Título | Categoria | Estado | Bloqueado por |
-|---|---|---|---|---|
-| T-001 | Conta, autenticação e aceite legal | enhancement | ready-for-agent | — |
-| T-002 | Estrutura de parceiros e adapters | enhancement | ready-for-agent | — |
-| T-003 | Biblioteca de assets e seleção de sprite | enhancement | ready-for-agent | — |
-| T-004 | Personagens salvos e personagem ativo | enhancement | blocked | T-002 |
-| T-005 | Configuração de projetos e preview | enhancement | blocked | T-003, T-004 |
-| T-006 | Overlay privado no OBS | enhancement | blocked | T-005 |
-| T-007 | Polling coordenado, presença e rate limits | enhancement | blocked | T-002, T-004, T-006 |
-| T-008 | Conclusão automática por reset confirmado | enhancement | blocked | T-007 |
-| T-009 | Landing page, parceiros e doações PIX | enhancement | ready-for-agent | — |
-| T-010 | Painel administrativo mínimo | enhancement | blocked | T-001, T-002 |
-| T-011 | Segurança operacional, logs, métricas e backup | enhancement | ready-for-agent | — |
-| T-012 | Exclusão de conta e retenção | enhancement | blocked | T-001, T-004, T-005 |
-| T-013 | Fluxo E2E do MVP com parceiro autorizado | enhancement | blocked | T-001..T-012 |
+Publicado como issues no GitHub (`LudgeroJR/Pokelive`), parent [#1](https://github.com/LudgeroJR/Pokelive/issues/1). GitHub é a fonte de verdade de estado/label a partir de agora; esta tabela é espelho de referência.
+
+| ID | Issue | Título | Categoria | Estado | Bloqueado por |
+|---|---|---|---|---|---|
+| T-001 | [#2](https://github.com/LudgeroJR/Pokelive/issues/2) | Conta, autenticação e aceite legal | enhancement | ready-for-agent | — |
+| T-002 | [#3](https://github.com/LudgeroJR/Pokelive/issues/3) | Estrutura de parceiros e adapters | enhancement | ready-for-agent | — |
+| T-003 | [#4](https://github.com/LudgeroJR/Pokelive/issues/4) | Biblioteca de assets e seleção de sprite | enhancement | ready-for-agent | — |
+| T-004 | [#7](https://github.com/LudgeroJR/Pokelive/issues/7) | Personagens salvos e personagem ativo | enhancement | blocked | T-002 (#3) |
+| T-005 | [#8](https://github.com/LudgeroJR/Pokelive/issues/8) | Configuração de projetos e preview | enhancement | blocked | T-003 (#4), T-004 (#7) |
+| T-006 | [#9](https://github.com/LudgeroJR/Pokelive/issues/9) | Overlay privado no OBS | enhancement | blocked | T-005 (#8) |
+| T-007 | [#10](https://github.com/LudgeroJR/Pokelive/issues/10) | Polling coordenado, presença e rate limits | enhancement | blocked | T-002 (#3), T-004 (#7), T-006 (#9) |
+| T-008 | [#11](https://github.com/LudgeroJR/Pokelive/issues/11) | Conclusão automática por reset confirmado | enhancement | blocked | T-007 (#10) |
+| T-009 | [#5](https://github.com/LudgeroJR/Pokelive/issues/5) | Landing page, parceiros e doações PIX | enhancement | ready-for-agent | — |
+| T-010 | [#12](https://github.com/LudgeroJR/Pokelive/issues/12) | Painel administrativo mínimo | enhancement | blocked | T-001 (#2), T-002 (#3) |
+| T-011 | [#6](https://github.com/LudgeroJR/Pokelive/issues/6) | Segurança operacional, logs, métricas e backup | enhancement | ready-for-agent | — |
+| T-012 | [#13](https://github.com/LudgeroJR/Pokelive/issues/13) | Exclusão de conta e retenção | enhancement | blocked | T-001 (#2), T-004 (#7), T-005 (#8) |
+| T-013 | [#14](https://github.com/LudgeroJR/Pokelive/issues/14) | Fluxo E2E do MVP com parceiro autorizado | enhancement | blocked | T-001..T-012 (#2-#13) |
 
 ---
 
 ## T-001 — Conta, autenticação e aceite legal
 
+**Issue:** [#2](https://github.com/LudgeroJR/Pokelive/issues/2)  
 **Category:** enhancement  
 **Status:** ready-for-agent  
 **Blocked by:** None
@@ -86,6 +89,7 @@ Validar comportamento externo via testes de autenticação e sessão.
 
 ## T-002 — Estrutura de parceiros e adapters
 
+**Issue:** [#3](https://github.com/LudgeroJR/Pokelive/issues/3)  
 **Category:** enhancement  
 **Status:** ready-for-agent  
 **Blocked by:** None
@@ -153,6 +157,7 @@ O adapter do primeiro parceiro autorizado será outro trabalho ou uma extensão 
 
 ## T-003 — Biblioteca de assets e seleção de sprite
 
+**Issue:** [#4](https://github.com/LudgeroJR/Pokelive/issues/4)  
 **Category:** enhancement  
 **Status:** ready-for-agent  
 **Blocked by:** None
@@ -198,9 +203,10 @@ Parceiro não é obrigado a fornecer sprite.
 
 ## T-004 — Personagens salvos e personagem ativo
 
+**Issue:** [#7](https://github.com/LudgeroJR/Pokelive/issues/7)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-002
+**Blocked by:** T-002 (#3)
 
 ### What this delivers
 
@@ -238,9 +244,10 @@ Streamer pode manter até 10 personagens salvos em diferentes parceiros, testar 
 
 ## T-005 — Configuração de projetos e preview
 
+**Issue:** [#8](https://github.com/LudgeroJR/Pokelive/issues/8)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-003, T-004
+**Blocked by:** T-003 (#4), T-004 (#7)
 
 ### What this delivers
 
@@ -285,9 +292,10 @@ Streamer configura de 1 a 4 projetos para o personagem ativo, escolhe balls, spr
 
 ## T-006 — Overlay privado no OBS
 
+**Issue:** [#9](https://github.com/LudgeroJR/Pokelive/issues/9)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-005
+**Blocked by:** T-005 (#8)
 
 ### What this delivers
 
@@ -330,9 +338,10 @@ Streamer recebe uma única URL privada de Browser Source que renderiza o overlay
 
 ## T-007 — Polling coordenado, presença e rate limits
 
+**Issue:** [#10](https://github.com/LudgeroJR/Pokelive/issues/10)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-002, T-004, T-006
+**Blocked by:** T-002 (#3), T-004 (#7), T-006 (#9)
 
 ### What this delivers
 
@@ -372,9 +381,10 @@ O backend consulta parceiros somente quando há consumidor ativo, compartilha re
 
 ## T-008 — Conclusão automática por reset confirmado
 
+**Issue:** [#11](https://github.com/LudgeroJR/Pokelive/issues/11)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-007
+**Blocked by:** T-007 (#10)
 
 ### What this delivers
 
@@ -426,6 +436,7 @@ Ao concluir:
 
 ## T-009 — Landing page, parceiros e doações PIX
 
+**Issue:** [#5](https://github.com/LudgeroJR/Pokelive/issues/5)  
 **Category:** enhancement  
 **Status:** ready-for-agent  
 **Blocked by:** None
@@ -477,9 +488,10 @@ Doações:
 
 ## T-010 — Painel administrativo mínimo
 
+**Issue:** [#12](https://github.com/LudgeroJR/Pokelive/issues/12)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-001, T-002
+**Blocked by:** T-001 (#2), T-002 (#3)
 
 ### What this delivers
 
@@ -513,6 +525,7 @@ Admin consegue:
 
 ## T-011 — Segurança operacional, logs, métricas e backup
 
+**Issue:** [#6](https://github.com/LudgeroJR/Pokelive/issues/6)  
 **Category:** enhancement  
 **Status:** ready-for-agent  
 **Blocked by:** None
@@ -547,9 +560,10 @@ Base operacional segura para produção: logging sanitizado, métricas, segredos
 
 ## T-012 — Exclusão de conta e retenção
 
+**Issue:** [#13](https://github.com/LudgeroJR/Pokelive/issues/13)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-001, T-004, T-005
+**Blocked by:** T-001 (#2), T-004 (#7), T-005 (#8)
 
 ### What this delivers
 
@@ -584,9 +598,10 @@ Após confirmação:
 
 ## T-013 — Fluxo E2E do MVP com parceiro autorizado
 
+**Issue:** [#14](https://github.com/LudgeroJR/Pokelive/issues/14)  
 **Category:** enhancement  
 **Status:** blocked  
-**Blocked by:** T-001..T-012
+**Blocked by:** T-001..T-012 (#2-#13)
 
 ### What this delivers
 
